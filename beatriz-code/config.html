@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+    <div class="configContainer">
+        <header class="configHeader">
+            <h1>Configurações</h1>
+        </header>
+        
+        <main class="configMain">
+            <section class="configSection">
+                <h2>Preferências de Conta</h2>
+                <div class="configItem">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" id="username" placeholder="Seu nome de usuário">
+                </div>
+                <div class="configItem">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+                <div class="configItem">
+                    <label for="language">Idioma</label>
+                    <select id="language">
+                        <option value="pt">Português</option>
+                        <option value="en">Inglês</option>
+                        <option value="es">Espanhol</option>
+                    </select>
+                </div>
+            </section>
+            
+            <section class="configSection">
+                <h2>Preferências de Privacidade</h2>
+                <div class="configItem checkbox">
+                    <input type="checkbox" id="notifications" checked>
+                    <label for="notifications">Receber notificações por e-mail</label>
+                </div>
+                <div class="configItem checkbox">
+                    <input type="checkbox" id="analytics" checked>
+                    <label for="analytics">Compartilhar dados para análises</label>
+                </div>
+            </section>
+            
+            <section class="configSection">
+                <h2>Tema</h2>
+                <div class="themeOptions">
+                    <div class="themeOption">
+                        <input type="radio" id="light" name="theme" value="light" checked>
+                        <label for="light">Claro</label>
+                    </div>
+                    <div class="themeOption">
+                        <input type="radio" id="dark" name="theme" value="dark">
+                        <label for="dark">Escuro</label>
+                    </div>
+                    <div class="themeOption">
+                        <input type="radio" id="system" name="theme" value="system">
+                        <label for="system">Sistema</label>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <section class="configFooter">
+            <button class="btn btnPrimary">Salvar Alterações</button>
+            <button class="btn btnSecondary">Cancelar</button>
+        </section>
+    </div>
+</body>
+</html>
